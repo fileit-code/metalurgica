@@ -1,11 +1,94 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<div class="w-full min-h-screen relative">
+		<header class="flex items-center justify-between py-6 px-3 bg-gradient-to-b from-black to-black/20   fixed w-full z-10 top-0">
+			<div class="text-white font-extrabold">
+        Metalurgica
+			</div>
+			<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+			</svg>
+		</header>
+		<div class="w-full h-screen fixed top-0 left-0 z-0 flex bg-[url('/metalwallp.webp')]  bg-cover bg-center bg-no-repeat">
+		</div>
+		<div class="w-full h-[80vh] text-white bg-black/50 backdrop-blur-lg relative z-10 mt-[100vh] flex flex-col pt-16 items-center">
+      <h1 class="text-3xl font-extrabold">
+        Metalurgica
+      </h1>
+      <p class="text-center mt-12 px-6 text-lg font-bold max-w-[600px]">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, obcaecati at vero aut harum aperiam, atque magni voluptates laudantium porro, quas maxime tenetur molestiae. Labore ab unde molestiae quas fugiat.
+      </p>
+    </div>
+		<div class="w-full min-h-screen bg-white relative z-10 flex flex-col items-center pt-16 pb-12">
+      <h2 class="text-3xl font-bold">
+        Productos
+      </h2>
+      <h3 class="mt-12 text-xl font-semibold">
+        Galpones
+      </h3>
+      <div class="grid gap-6 grid-cols-1 md:grid-cols-3 justify-items-center">
+        <img src="/galpon1.jpg" class="w-[300px] h-[200px] object-cover"/>
+        <img src="/galpon2.jpeg" class="w-[300px] h-[200px] object-cover"/>
+        <img src="/galpon3.jpeg" class="w-[300px] h-[200px] object-cover"/>
+      </div>
+      <h3 class="mt-12 text-xl font-semibold">
+        Silos
+      </h3>
+      <div class="grid gap-6 grid-cols-1 md:grid-cols-3 justify-items-center">
+        <img src="/silo1.jpg" class="w-[300px] h-[200px] object-cover"/>
+        <img src="/silo2.jpg" class="w-[300px] h-[200px] object-cover"/>
+        <img src="/silo3.jpg" class="w-[300px] h-[200px] object-cover"/>
+      </div>
+    </div>
+		<div class="w-full min-h-screen bg-neutral-300 relative z-10 flex flex-col items-center pt-16">
+      <h2 class="text-3xl font-bold">
+        Contacto
+      </h2>
+      <form class="w-full max-w-md mt-8 px-4 flex flex-col gap-4">
+        <div class="flex flex-col gap-2">
+          <label for="name" class="font-semibold">Nombre</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required
+            class="w-full p-2 rounded border border-gray-300 focus:outline-none focus:border-gray-500"
+          />
+        </div>
+    
+        <div class="flex flex-col gap-2">
+          <label for="email" class="font-semibold">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required
+            class="w-full p-2 rounded border border-gray-300 focus:outline-none focus:border-gray-500"
+          />
+        </div>
+    
+        <div class="flex flex-col gap-2">
+          <label for="message" class="font-semibold">Mensaje</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="4" 
+            required
+            class="w-full p-2 rounded border border-gray-300 focus:outline-none focus:border-gray-500 resize-none"
+          ></textarea>
+        </div>
+    
+        <button 
+          type="submit"
+          class="mt-4 bg-black text-white font-bold py-2 px-4 rounded hover:bg-gray-800 transition-colors"
+        >
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+  </div>
 </Layout>
