@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout>
+  <div class="w-full min-h-screen bg-white flex flex-col items-center">
+    <h3 class="mt-12 text-xl font-semibold" transition:name="galpones-subtitle">
+      Galpones
+    </h3>
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-3 justify-items-center mt-12">
+      <img src="/galpon1.jpg" class="w-[300px] h-[200px] object-cover" transition:name="galpones-image"/>
+      <img src="/galpon2.jpeg" class="w-[300px] h-[200px] object-cover"/>
+      <img src="/galpon3.jpeg" class="w-[300px] h-[200px] object-cover"/>
+    </div>
+  </div>
+</Layout>

@@ -5,44 +5,44 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
 	<div class="w-full min-h-screen relative">
-		<header class="flex items-center justify-between py-6 px-3 bg-gradient-to-b from-black to-black/20   fixed w-full z-10 top-0">
+		<header class="flex items-center justify-between py-6 px-3 bg-gradient-to-b from-black to-black/20 fixed w-full z-10 top-0">
 			<div class="text-white font-extrabold">
         Metalurgica
 			</div>
-			<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-			</svg>
+      <a href="/menu">
+        <img src="/menuw-icon.svg" class="h-6 w-6" transition:name="menu-icon"/>
+      </a>
 		</header>
-		<div class="w-full h-screen fixed top-0 left-0 z-0 flex bg-[url('/metalwallp.webp')]  bg-cover bg-center bg-no-repeat">
+		<div class="w-full h-screen fixed top-0 left-0 z-0 flex bg-[url('/shed2.jpg')]  bg-cover bg-center bg-no-repeat">
 		</div>
 		<div class="w-full h-[80vh] text-white bg-black/50 backdrop-blur-lg relative z-10 mt-[100vh] flex flex-col pt-16 items-center">
-      <h1 class="text-3xl font-extrabold">
+      <h1 class="text-3xl font-extrabold" transition:name="metalurgica-about">
         Metalurgica
       </h1>
       <p class="text-center mt-12 px-6 text-lg font-bold max-w-[600px]">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, obcaecati at vero aut harum aperiam, atque magni voluptates laudantium porro, quas maxime tenetur molestiae. Labore ab unde molestiae quas fugiat.
       </p>
+      <a href=" /about" class="mt-8">
+        <img src="plus-icon.svg" class="h-8 w-8"/>
+      </a>
     </div>
 		<div class="w-full min-h-screen bg-white relative z-10 flex flex-col items-center pt-16 pb-12">
       <h2 class="text-3xl font-bold">
         Productos
       </h2>
-      <h3 class="mt-12 text-xl font-semibold">
+      <h3 class="mt-12 text-xl font-semibold" transition:name="galpones-subtitle">
         Galpones
       </h3>
-      <div class="grid gap-6 grid-cols-1 md:grid-cols-3 justify-items-center">
-        <img src="/galpon1.jpg" class="w-[300px] h-[200px] object-cover"/>
-        <img src="/galpon2.jpeg" class="w-[300px] h-[200px] object-cover"/>
-        <img src="/galpon3.jpeg" class="w-[300px] h-[200px] object-cover"/>
-      </div>
-      <h3 class="mt-12 text-xl font-semibold">
+      <a href="/galpones">
+        <img src="/galpon1.jpg" class="w-[300px] h-[200px] object-cover mt-4"  transition:name="galpones-image"/>
+      </a>
+
+      <h3 class="mt-12 text-xl font-semibold" transition:name="silos-subtitle">
         Silos
       </h3>
-      <div class="grid gap-6 grid-cols-1 md:grid-cols-3 justify-items-center">
-        <img src="/silo1.jpg" class="w-[300px] h-[200px] object-cover"/>
-        <img src="/silo2.jpg" class="w-[300px] h-[200px] object-cover"/>
-        <img src="/silo3.jpg" class="w-[300px] h-[200px] object-cover"/>
-      </div>
+      <a href="/silos">
+        <img src="/silo2.jpg" class="w-[300px] h-[200px] object-cover mt-4" transition:name="silos-image"/>
+      </a>
     </div>
 		<div class="w-full min-h-screen bg-neutral-300 relative z-10 flex flex-col items-center pt-16">
       <h2 class="text-3xl font-bold">

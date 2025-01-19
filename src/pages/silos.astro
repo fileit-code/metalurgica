@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout>
+  <div class="w-full min-h-screen bg-white flex flex-col items-center pt-12 text-center">
+    <h3 class="text-xl font-semibold" transition:name="silos-subtitle">
+      Silos
+    </h3>
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-3 justify-items-center mt-12">
+      <img src="/silo2.jpg" class="w-[300px] h-[200px] object-cover" transition:name="silos-image"/>
+      <img src="/silo1.jpg" class="w-[300px] h-[200px] object-cover"/>
+      <img src="/silo3.jpg" class="w-[300px] h-[200px] object-cover"/>
+    </div>
+  </div>
+</Layout>
