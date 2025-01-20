@@ -4,47 +4,72 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<div class="w-full min-h-screen relative">
-		<header class="flex items-center justify-between py-6 px-3 bg-gradient-to-b from-black to-black/20 fixed w-full z-10 top-0">
-			<div class="text-white font-extrabold">
-        Metalurgica
-			</div>
+  <div class="w-full min-h-screen relative">
+    <header class="flex items-center justify-between py-6 px-3 bg-gradient-to-b from-black to-black/20 fixed w-full z-10 top-0">
+      <div class="text-white font-extrabold">
+        Metalúrgica Profesional
+      </div>
       <a href="/menu">
-        <img src="/menuw-icon.svg" class="h-6 w-6" transition:name="menu-icon"/>
+        <img 
+          src="/menuw-icon.svg" 
+          class="h-6 w-6" 
+          alt="Ícono de menú" 
+          transition:name="menu-icon"
+        />
       </a>
-		</header>
-		<div class="w-full h-screen fixed top-0 left-0 z-0 flex bg-[url('/shed2.jpg')]  bg-cover bg-center bg-no-repeat">
-		</div>
-		<div class="w-full h-[80vh] text-white bg-black/50 backdrop-blur-lg relative z-10 mt-[100vh] flex flex-col pt-16 items-center">
+    </header>
+
+    <div class="w-full h-screen fixed top-0 left-0 z-0 flex bg-[url('/shed2.jpg')] bg-cover bg-center bg-no-repeat">
+      <span class="sr-only">Imagen de un galpón metálico</span>
+    </div>
+
+    <div class="w-full h-[80vh] text-white bg-black/50 backdrop-blur-lg relative z-10 mt-[100vh] flex flex-col pt-16 items-center">
       <h1 class="text-3xl font-extrabold" transition:name="metalurgica-about">
-        Metalurgica
+        Metalúrgica Profesional
       </h1>
       <p class="text-center mt-12 px-6 text-lg font-bold max-w-[600px]">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, obcaecati at vero aut harum aperiam, atque magni voluptates laudantium porro, quas maxime tenetur molestiae. Labore ab unde molestiae quas fugiat.
+        Nos especializamos en la fabricación de estructuras metálicas como galpones, silos y soluciones personalizadas para la industria. Con más de 20 años de experiencia, garantizamos calidad y durabilidad en cada proyecto.
       </p>
-      <a href=" /about" class="mt-8">
-        <img src="plus-icon.svg" class="h-8 w-8"/>
+      <a href="/about" class="mt-8">
+        <img 
+          src="/plus-icon.svg" 
+          class="h-8 w-8" 
+          alt="Más información sobre nosotros" 
+        />
       </a>
     </div>
-		<div class="w-full min-h-screen bg-white relative z-10 flex flex-col items-center pt-16 pb-12">
+
+    <div class="w-full min-h-screen bg-white relative z-10 flex flex-col items-center pt-16 pb-12">
       <h2 class="text-3xl font-bold">
         Productos
       </h2>
+
       <h3 class="mt-12 text-xl font-semibold" transition:name="galpones-subtitle">
         Galpones
       </h3>
       <a href="/galpones">
-        <img src="/galpon1.jpg" class="w-[300px] h-[200px] object-cover mt-4"  transition:name="galpones-image"/>
+        <img 
+          src="/galpon1.jpg" 
+          class="w-[300px] h-[200px] object-cover mt-4" 
+          alt="Galpón metálico de gran tamaño" 
+          transition:name="galpones-image" 
+        />
       </a>
 
       <h3 class="mt-12 text-xl font-semibold" transition:name="silos-subtitle">
         Silos
       </h3>
       <a href="/silos">
-        <img src="/silo2.jpg" class="w-[300px] h-[200px] object-cover mt-4" transition:name="silos-image"/>
+        <img 
+          src="/silo2.jpg" 
+          class="w-[300px] h-[200px] object-cover mt-4" 
+          alt="Silo metálico para almacenamiento de granos" 
+          transition:name="silos-image" 
+        />
       </a>
     </div>
-		<div class="w-full min-h-screen bg-neutral-300 relative z-10 flex flex-col items-center pt-16">
+
+    <div class="w-full min-h-screen bg-neutral-300 relative z-10 flex flex-col items-center pt-16">
       <h2 class="text-3xl font-bold">
         Contacto
       </h2>
@@ -57,9 +82,10 @@ import Layout from '../layouts/Layout.astro';
             name="name" 
             required
             class="w-full p-2 rounded border border-gray-300 focus:outline-none focus:border-gray-500"
+            placeholder="Ingresa tu nombre completo"
           />
         </div>
-    
+
         <div class="flex flex-col gap-2">
           <label for="email" class="font-semibold">Email</label>
           <input 
@@ -68,9 +94,10 @@ import Layout from '../layouts/Layout.astro';
             name="email" 
             required
             class="w-full p-2 rounded border border-gray-300 focus:outline-none focus:border-gray-500"
+            placeholder="Ingresa tu correo electrónico"
           />
         </div>
-    
+
         <div class="flex flex-col gap-2">
           <label for="message" class="font-semibold">Mensaje</label>
           <textarea 
@@ -79,9 +106,10 @@ import Layout from '../layouts/Layout.astro';
             rows="4" 
             required
             class="w-full p-2 rounded border border-gray-300 focus:outline-none focus:border-gray-500 resize-none"
+            placeholder="Escribe tu mensaje aquí"
           ></textarea>
         </div>
-    
+
         <button 
           type="submit"
           class="mt-4 bg-black text-white font-bold py-2 px-4 rounded hover:bg-gray-800 transition-colors"

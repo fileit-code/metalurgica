@@ -1,19 +1,30 @@
 ---
 import { ClientRouter } from "astro:transitions";
 
-
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/beam.png" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="google-site-verification" content ="T6KyGuqeHzNGWxq8DV4sKJWQISxAxX6NnGDT6yWWxV8" />
-		<ClientRouter/>
-		<title>Metalurgica plantilla</title>
+		<meta name="google-site-verification" content="T6KyGuqeHzNGWxq8DV4sKJWQISxAxX6NnGDT6yWWxV8" />
+		<meta name="description" content="Metalúrgica profesional: fabricación de estructuras metálicas, galpones y silos con alta calidad y durabilidad." />
+		<meta name="keywords" content="metalurgia, estructuras metálicas, galpones, silos, soluciones industriales" />
+		<meta name="author" content="Metalúrgica Profesional" />
+		<meta property="og:title" content="Metalúrgica Profesional - Soluciones Metálicas de Calidad" />
+		<meta property="og:description" content="Especialistas en la fabricación de estructuras metálicas como galpones y silos. Más de 20 años de experiencia en el sector." />
+		<meta property="og:image" content="https://tusitioweb.com/images/og-image.jpg" />
+		<meta property="og:url" content="https://tusitioweb.com" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Metalúrgica Profesional - Soluciones Metálicas de Calidad" />
+		<meta name="twitter:description" content="Fabricación de estructuras metálicas, galpones y silos con experiencia comprobada." />
+		<meta name="twitter:image" content="https://tusitioweb.com/images/og-image.jpg" />
+		<title>Metalúrgica Profesional - Soluciones Metálicas</title>
 	</head>
 	<body>
 		<slot />
