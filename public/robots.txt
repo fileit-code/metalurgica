@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://metalurgica.pages.dev/sitemap-index.xml
